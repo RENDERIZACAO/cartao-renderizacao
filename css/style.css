@@ -1,0 +1,36 @@
+/* ===================================================
+   RENDERIZAÇÃO SERVIÇOS DE ENGENHARIA
+   style.css
+   =================================================== */
+
+:root{
+
+    --azul:#0F3D66;
+    --azulEscuro:#061A2C;
+    --verde:#39A852;
+    --cinza:#5B6670;
+    --branco:#FFFFFF;
+
+    --radius:18px;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:linear-gradient(180deg,#061A2C,#0F3D66);
+
+    color:white;
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    Helvetica,
+    sans-serif;
+
+}
