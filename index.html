@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Renderização Serviços de Engenharia - Laudos, perícias, vistorias, segurança do trabalho e engenharia civil em Ponta Grossa e região." />
-  <title>Renderização Serviços de Engenharia</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/script.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renderização Serviços de Engenharia</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
 </head>
 <body>
 
+<a class="floating-whatsapp" href="https://wa.me/5542999060610?text=Ol%C3%A1%2C%20Engenheiro%20Christian%21%20Vim%20pelo%20portal%20digital%20da%20Renderiza%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.">💬</a>
+
 <header class="hero">
+  <div class="top-badge">Portal Oficial • Renderização Serviços de Engenharia</div>
+
   <div class="logo-box">
     <img src="img/logo-renderizacao.png.png" alt="Renderização Serviços de Engenharia" class="logo">
   </div>
@@ -18,6 +21,12 @@
   <p class="name">Eng. Christian Guerem</p>
   <p class="crea">CREA-PR 200142/D</p>
   <p class="slogan">Engenharia que <strong>transforma</strong> e protege</p>
+
+  <div class="trust-row">
+    <div><strong>CREA</strong><span>Ativo</span></div>
+    <div><strong>ART</strong><span>Quando aplicável</span></div>
+    <div><strong>PG/PR</strong><span>e região</span></div>
+  </div>
 
   <a class="primary-btn" href="https://wa.me/5542999060610?text=Ol%C3%A1%2C%20Engenheiro%20Christian%21%20Vim%20pelo%20seu%20cart%C3%A3o%20de%20visita%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20e%20conhecer%20melhor%20os%20servi%C3%A7os%20da%20Renderiza%C3%A7%C3%A3o%20Servi%C3%A7os%20de%20Engenharia.">
     Solicitar orçamento pelo WhatsApp
@@ -31,11 +40,21 @@
   <a href="mailto:contato@renderengenharia.com.br">✉️ Enviar e-mail</a>
   <a href="https://instagram.com/christianguerem">📸 Instagram</a>
   <a href="https://renderengenharia.com.br">🌐 Site</a>
+  <a href="https://www.google.com/maps/search/?api=1&query=Renderização+Serviços+de+Engenharia+Ponta+Grossa+PR">📍 Localização</a>
+  <button onclick="sharePortal()">🔗 Compartilhar</button>
 </section>
 
 <section class="section intro">
   <h2>Central Digital da Renderização</h2>
   <p>Atendimento técnico em Engenharia Civil, Segurança do Trabalho, Laudos, Perícias e Vistorias em Ponta Grossa e região.</p>
+</section>
+
+<section class="section">
+  <h2>Para quem atendemos</h2>
+  <div class="audience">
+    <div>🏢 Empresas</div><div>⚖️ Advogados</div><div>🏘️ Imobiliárias</div>
+    <div>🏗️ Obras</div><div>🏠 Proprietários</div><div>🏢 Condomínios</div>
+  </div>
 </section>
 
 <section class="section">
@@ -64,9 +83,7 @@
   <p>Escolha o tipo de serviço e envie uma mensagem pronta pelo WhatsApp.</p>
   <div class="form">
     <select id="service">
-      <option value="PGR">PGR</option>
-      <option value="LTCAT">LTCAT</option>
-      <option value="PPP">PPP</option>
+      <option value="PGR">PGR</option><option value="LTCAT">LTCAT</option><option value="PPP">PPP</option>
       <option value="Laudo de Insalubridade">Laudo de Insalubridade</option>
       <option value="Laudo de Periculosidade">Laudo de Periculosidade</option>
       <option value="AET / Ergonomia">AET / Ergonomia</option>
@@ -75,7 +92,7 @@
       <option value="Engenharia Civil">Engenharia Civil</option>
       <option value="Consultoria Técnica">Consultoria Técnica</option>
     </select>
-    <input id="clientName" type="text" placeholder="Seu nome ou empresa" />
+    <input id="clientName" type="text" placeholder="Seu nome ou empresa">
     <button onclick="sendBudget()">Enviar para WhatsApp</button>
   </div>
 </section>
@@ -83,17 +100,15 @@
 <section class="section">
   <h2>Contato</h2>
   <div class="contact-list">
-    <p>📍 Ponta Grossa – PR e região</p>
-    <p>📲 (42) 99906-0610</p>
-    <p>✉️ contato@renderengenharia.com.br</p>
-    <p>📸 @christianguerem</p>
+    <p>📍 Ponta Grossa – PR e região</p><p>📲 (42) 99906-0610</p>
+    <p>✉️ contato@renderengenharia.com.br</p><p>📸 @christianguerem</p>
   </div>
 </section>
 
 </main>
 
 <footer>
-  <p>Renderização Serviços de Engenharia</p>
+  <p><strong>Renderização Serviços de Engenharia</strong></p>
   <p>Atendimento técnico com responsabilidade, ética e ART quando aplicável.</p>
 </footer>
 

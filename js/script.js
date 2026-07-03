@@ -1,8 +1,2 @@
-function sendBudget(){
-  const service = document.getElementById("service").value;
-  const name = document.getElementById("clientName").value.trim();
-  let message = "Olá, Engenheiro Christian! Vim pelo cartão digital da Renderização e gostaria de solicitar um orçamento.";
-  message += "%0A%0AServiço de interesse: " + encodeURIComponent(service);
-  if(name){ message += "%0ANome/empresa: " + encodeURIComponent(name); }
-  window.open("https://wa.me/5542999060610?text=" + message, "_blank");
-}
+function sendBudget(){const service=document.getElementById("service").value;const name=document.getElementById("clientName").value.trim();let message="Olá, Engenheiro Christian! Vim pelo cartão digital da Renderização e gostaria de solicitar um orçamento.";message+="%0A%0AServiço de interesse: "+encodeURIComponent(service);if(name){message+="%0ANome/empresa: "+encodeURIComponent(name)}window.open("https://wa.me/5542999060610?text="+message,"_blank")}
+function sharePortal(){const data={title:"Renderização Serviços de Engenharia",text:"Portal digital da Renderização Serviços de Engenharia",url:window.location.href};if(navigator.share){navigator.share(data)}else{navigator.clipboard.writeText(window.location.href);alert("Link copiado!")}}
