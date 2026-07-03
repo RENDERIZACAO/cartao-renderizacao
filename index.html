@@ -55,6 +55,7 @@
   <a href="https://instagram.com/christianguerem">📸 Instagram</a>
   <a href="https://renderengenharia.com.br">🌐 Site</a>
   <a href="https://www.google.com/maps/search/?api=1&query=Renderização+Serviços+de+Engenharia+Ponta+Grossa+PR">📍 Localização</a>
+  <a href="arquivos/christian-guerem.vcf" download>📇 Salvar contato</a>
   <button onclick="sharePortal()">🔗 Compartilhar</button>
 </section>
 
@@ -109,13 +110,16 @@
 </section>
 
 <section class="section reveal">
-  <h2>Serviços principais</h2>
-  <div class="tags">
-    <span>PGR</span><span>Inventário de Riscos</span><span>Plano de Ação</span><span>LTCAT</span>
-    <span>PPP</span><span>eSocial SST</span><span>Gestão do FAP</span><span>Insalubridade</span>
-    <span>Periculosidade</span><span>AET / NR-17</span><span>CIPA</span><span>SIPAT</span>
-    <span>DDS</span><span>Treinamentos</span><span>Perícias</span><span>Vistorias Imobiliárias</span>
-    <span>Inspeções Prediais</span><span>Patologias Construtivas</span><span>Consultoria Técnica</span>
+  <h2>Catálogo de serviços</h2>
+  <div class="service-list">
+    <button onclick="selectService('PGR')">PGR</button>
+    <button onclick="selectService('LTCAT')">LTCAT</button>
+    <button onclick="selectService('PPP')">PPP</button>
+    <button onclick="selectService('Laudo de Insalubridade')">Insalubridade</button>
+    <button onclick="selectService('Laudo de Periculosidade')">Periculosidade</button>
+    <button onclick="selectService('Perícia Técnica')">Perícias</button>
+    <button onclick="selectService('Vistoria Imobiliária')">Vistorias</button>
+    <button onclick="selectService('Engenharia Civil')">Engenharia Civil</button>
   </div>
 </section>
 
@@ -128,18 +132,6 @@
     <div><b>4</b><span>Visita técnica</span></div>
     <div><b>5</b><span>Entrega técnica</span></div>
     <div><b>6</b><span>Suporte</span></div>
-  </div>
-</section>
-
-<section class="section reveal testimonials">
-  <h2>Confiança e atendimento técnico</h2>
-  <div class="testimonial">
-    <p>⭐⭐⭐⭐⭐</p>
-    <blockquote>“Atendimento técnico, organizado e com foco em segurança.”</blockquote>
-  </div>
-  <div class="testimonial">
-    <p>⭐⭐⭐⭐⭐</p>
-    <blockquote>“Documentação clara e orientação objetiva para tomada de decisão.”</blockquote>
   </div>
 </section>
 
@@ -158,6 +150,8 @@
       <option value="Consultoria Técnica">Consultoria Técnica</option>
     </select>
     <input id="clientName" type="text" placeholder="Seu nome ou empresa">
+    <input id="clientPhone" type="text" placeholder="Seu telefone">
+    <textarea id="clientNote" placeholder="Descreva rapidamente sua necessidade"></textarea>
     <button onclick="sendBudget()">Enviar para WhatsApp</button>
   </div>
 </section>
@@ -175,7 +169,7 @@
   <div class="download-grid">
     <a href="#orcamento">📄 Solicitar portfólio</a>
     <a href="#orcamento">📄 Solicitar proposta</a>
-    <a href="#contato">📇 Salvar contato</a>
+    <a href="arquivos/christian-guerem.vcf" download>📇 Baixar contato</a>
   </div>
 </section>
 
