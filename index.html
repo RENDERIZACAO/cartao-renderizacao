@@ -24,20 +24,22 @@
 <nav class="nav">
   <a href="#inicio">Início</a>
   <a href="#servicos">Serviços</a>
-  <a href="#obras">Destaques</a>
-  <a href="#diferenciais">Diferenciais</a>
+  <a href="#trabalhos">Trabalhos</a>
   <a href="#orcamento">Orçamento</a>
   <a href="#contato">Contato</a>
 </nav>
 
 <header class="hero" id="inicio">
   <div class="top-badge">Portal Oficial • Renderização Serviços de Engenharia</div>
+
   <div class="logo-box">
     <img src="img/logo-renderizacao.png.png" alt="Renderização Serviços de Engenharia" class="logo">
   </div>
 
-  <h1>Engenharia Civil • Segurança do Trabalho • Perícias Técnicas</h1>
-  <p class="subtitle">Soluções técnicas para empresas, advogados, condomínios, imobiliárias e proprietários.</p>
+  <div class="hero-banner">
+    <h1>Laudos • Perícias • Segurança do Trabalho • Engenharia Civil</h1>
+    <p>Atendimento técnico em Ponta Grossa e região, com responsabilidade profissional e documentação adequada ao escopo.</p>
+  </div>
 
   <p class="name">Eng. Christian Guerem</p>
   <p class="crea">CREA-PR 200142/D</p>
@@ -64,10 +66,10 @@
 </section>
 
 <section class="section reveal stats">
-  <div><strong data-count="150">0</strong><span>Laudos e relatórios</span></div>
-  <div><strong data-count="80">0</strong><span>Empresas e clientes</span></div>
-  <div><strong data-count="300">0</strong><span>Vistorias técnicas</span></div>
-  <div><strong data-count="100">0</strong><span>% Responsabilidade técnica</span></div>
+  <div><strong data-count="180">0</strong><span>Empresas e clientes</span></div>
+  <div><strong data-count="350">0</strong><span>Laudos e relatórios</span></div>
+  <div><strong data-count="80">0</strong><span>Perícias técnicas</span></div>
+  <div><strong data-count="500">0</strong><span>Obras e vistorias</span></div>
 </section>
 
 <section class="section reveal">
@@ -86,8 +88,9 @@
 </section>
 
 <section class="section reveal">
-  <h2>Catálogo rápido de serviços</h2>
-  <div class="service-list">
+  <h2>Pesquisar serviço</h2>
+  <input class="search-box" id="serviceSearch" type="text" placeholder="Digite PGR, LTCAT, PPP, perícia, vistoria..." onkeyup="filterServices()">
+  <div class="service-list" id="serviceList">
     <button onclick="selectService('PGR')">PGR</button>
     <button onclick="selectService('LTCAT')">LTCAT</button>
     <button onclick="selectService('PPP')">PPP</button>
@@ -103,46 +106,32 @@
   </div>
 </section>
 
-<section class="section reveal" id="obras">
-  <h2>Obras e atendimentos em destaque</h2>
-  <div class="highlight-grid">
-    <article class="highlight"><div class="photo-placeholder">🏗️</div><h3>Pavimentação e infraestrutura</h3><p>Experiência em obras, materiais, execução e controle técnico.</p></article>
-    <article class="highlight"><div class="photo-placeholder">⚖️</div><h3>Perícias e assistência técnica</h3><p>Análise técnica para demandas judiciais, extrajudiciais e pareceres.</p></article>
-    <article class="highlight"><div class="photo-placeholder">🏢</div><h3>Vistorias e inspeções</h3><p>Avaliação de imóveis, patologias construtivas e documentação técnica.</p></article>
-  </div>
-</section>
-
-<section class="section reveal" id="diferenciais">
-  <h2>Por que escolher a Renderização?</h2>
-  <div class="benefits">
-    <div>✔ CREA ativo</div>
-    <div>✔ ART quando aplicável</div>
-    <div>✔ Atendimento técnico</div>
-    <div>✔ Laudos fundamentados</div>
-    <div>✔ Segurança jurídica</div>
-    <div>✔ Engenharia baseada em dados</div>
-    <div>✔ Responsabilidade técnica</div>
-    <div>✔ Ponta Grossa e região</div>
-  </div>
-</section>
-
 <section class="section reveal comparison">
-  <h2>Decisão técnica reduz risco</h2>
+  <h2>Antes × Depois</h2>
   <div class="compare-grid">
     <div class="bad">
-      <h3>❌ Evite decisões frágeis</h3>
-      <p>Orçamento sem análise</p>
-      <p>Serviço sem responsável técnico</p>
-      <p>Documentação incompleta</p>
-      <p>Risco jurídico e financeiro</p>
+      <h3>❌ Sem engenharia técnica</h3>
+      <p>Risco de decisão por achismo</p>
+      <p>Documentação frágil</p>
+      <p>Multas e passivos</p>
+      <p>Retrabalho e insegurança</p>
     </div>
     <div class="good">
-      <h3>✅ A Renderização entrega</h3>
+      <h3>✅ Com a Renderização</h3>
       <p>Critério técnico</p>
-      <p>ART quando aplicável</p>
+      <p>Documentação organizada</p>
       <p>Responsável técnico identificado</p>
-      <p>Orientação objetiva para decisão</p>
+      <p>ART quando aplicável</p>
     </div>
+  </div>
+</section>
+
+<section class="section reveal" id="trabalhos">
+  <h2>Trabalhos realizados</h2>
+  <div class="highlight-grid">
+    <article class="highlight" onclick="openModal('Pavimentação e infraestrutura')"><div class="photo-placeholder">🏗️</div><h3>Pavimentação e infraestrutura</h3><p>Experiência em obras, materiais, execução e controle técnico.</p></article>
+    <article class="highlight" onclick="openModal('Perícias e assistência técnica')"><div class="photo-placeholder">⚖️</div><h3>Perícias e assistência técnica</h3><p>Análise técnica para demandas judiciais, extrajudiciais e pareceres.</p></article>
+    <article class="highlight" onclick="openModal('Vistorias e inspeções')"><div class="photo-placeholder">🏢</div><h3>Vistorias e inspeções</h3><p>Avaliação de imóveis, patologias construtivas e documentação técnica.</p></article>
   </div>
 </section>
 
@@ -150,16 +139,16 @@
   <h2>Como funciona o atendimento</h2>
   <div class="steps">
     <div><b>1</b><span>Contato inicial</span></div>
-    <div><b>2</b><span>Entendimento da demanda</span></div>
+    <div><b>2</b><span>Entendimento</span></div>
     <div><b>3</b><span>Orçamento</span></div>
-    <div><b>4</b><span>Visita técnica</span></div>
-    <div><b>5</b><span>Entrega técnica</span></div>
+    <div><b>4</b><span>Vistoria</span></div>
+    <div><b>5</b><span>Laudo ou entrega</span></div>
     <div><b>6</b><span>Suporte</span></div>
   </div>
 </section>
 
 <section class="section reveal testimonials">
-  <h2>Avaliações</h2>
+  <h2>Depoimentos</h2>
   <div class="testimonial-slider">
     <div class="testimonial active"><p>★★★★★</p><blockquote>“Atendimento técnico e objetivo. Estrutura preparada para orientar decisões com segurança.”</blockquote></div>
     <div class="testimonial"><p>★★★★★</p><blockquote>“Aqui ficarão depoimentos reais de clientes atendidos pela Renderização.”</blockquote></div>
@@ -185,6 +174,7 @@
     <input id="clientName" type="text" placeholder="Seu nome ou empresa">
     <input id="clientPhone" type="text" placeholder="Seu telefone">
     <textarea id="clientNote" placeholder="Descreva rapidamente sua necessidade"></textarea>
+    <label class="file-label">📎 Campo para anexos será ativado em versão futura</label>
     <button onclick="sendBudget()">Enviar para WhatsApp</button>
   </div>
 </section>
@@ -199,9 +189,10 @@
 </section>
 
 <section class="section reveal map-card">
-  <h2>Atendimento regional</h2>
-  <p>Base em Ponta Grossa – PR, com atendimento técnico na região.</p>
-  <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Renderização+Serviços+de+Engenharia+Ponta+Grossa+PR">📍 Abrir localização no Google Maps</a>
+  <h2>Mapa de atendimento</h2>
+  <p>Base em Ponta Grossa – PR, com atendimento técnico regional.</p>
+  <iframe class="map-frame" src="https://maps.google.com/maps?q=Ponta%20Grossa%20PR&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe>
+  <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Renderização+Serviços+de+Engenharia+Ponta+Grossa+PR">📍 Abrir no Google Maps</a>
 </section>
 
 <section class="section reveal downloads">
@@ -218,14 +209,24 @@
   <div class="contact-list">
     <p>📍 Ponta Grossa – PR e região</p><p>📲 (42) 99906-0610</p>
     <p>✉️ contato@renderengenharia.com.br</p><p>📸 @christianguerem</p>
+    <p>🌐 renderengenharia.com.br</p>
   </div>
 </section>
 
 </main>
 
+<div class="modal" id="modal" onclick="closeModal()">
+  <div class="modal-content">
+    <button onclick="closeModal()">×</button>
+    <h2 id="modalTitle">Trabalho técnico</h2>
+    <p>Área preparada para inserir fotos reais, descrição do serviço, local, escopo e resultado entregue.</p>
+  </div>
+</div>
+
 <footer>
   <p><strong>Renderização Serviços de Engenharia</strong></p>
   <p>Eng. Christian Guerem • CREA-PR 200142/D</p>
+  <p>WhatsApp: (42) 99906-0610 • contato@renderengenharia.com.br</p>
   <p>Atendimento técnico com responsabilidade, ética e ART quando aplicável.</p>
 </footer>
 
