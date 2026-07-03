@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Renderização Serviços de Engenharia em Ponta Grossa - Laudos, perícias, vistorias, engenharia civil e segurança do trabalho.">
-<meta name="keywords" content="PGR, LTCAT, PPP, laudo técnico, perícia engenharia, vistoria imobiliária, segurança do trabalho, Ponta Grossa">
+<meta name="keywords" content="PGR, LTCAT, PPP, laudo técnico, perícia engenharia, vistoria imobiliária, segurança do trabalho, Ponta Grossa, insalubridade, periculosidade">
 <title>Renderização Serviços de Engenharia</title>
 <link rel="stylesheet" href="css/style.css">
 <script defer src="js/script.js"></script>
@@ -18,14 +18,13 @@
   <a href="#inicio">Início</a>
   <a href="#servicos">Serviços</a>
   <a href="#publicos">Públicos</a>
-  <a href="#processo">Processo</a>
+  <a href="#diferenciais">Diferenciais</a>
   <a href="#orcamento">Orçamento</a>
   <a href="#contato">Contato</a>
 </nav>
 
 <header class="hero" id="inicio">
   <div class="top-badge">Portal Oficial • Renderização Serviços de Engenharia</div>
-
   <div class="logo-box">
     <img src="img/logo-renderizacao.png.png" alt="Renderização Serviços de Engenharia" class="logo">
   </div>
@@ -42,9 +41,7 @@
     <div><strong>PG/PR</strong><span>e região</span></div>
   </div>
 
-  <a class="primary-btn" href="https://wa.me/5542999060610?text=Ol%C3%A1%2C%20Engenheiro%20Christian%21%20Vim%20pelo%20portal%20digital%20da%20Renderiza%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.">
-    Solicitar orçamento pelo WhatsApp
-  </a>
+  <a class="primary-btn" href="#orcamento">Solicitar orçamento</a>
 </header>
 
 <main class="app">
@@ -60,70 +57,78 @@
 </section>
 
 <section class="section reveal stats">
-  <div><strong data-count="500">0</strong><span>Serviços realizados</span></div>
-  <div><strong data-count="100">0</strong><span>Empresas atendidas</span></div>
-  <div><strong data-count="50">0</strong><span>Perícias e vistorias</span></div>
+  <div><strong data-count="150">0</strong><span>Laudos e relatórios</span></div>
+  <div><strong data-count="80">0</strong><span>Empresas e clientes</span></div>
+  <div><strong data-count="300">0</strong><span>Vistorias técnicas</span></div>
   <div><strong data-count="100">0</strong><span>% Responsabilidade técnica</span></div>
 </section>
 
 <section class="section reveal">
   <h2>Central Digital da Renderização</h2>
-  <p>Atendimento técnico em Engenharia Civil, Segurança do Trabalho, Laudos, Perícias e Vistorias em Ponta Grossa e região.</p>
+  <p>Um canal direto para solicitar atendimento técnico, entender os serviços e entrar em contato com a Renderização Serviços de Engenharia.</p>
 </section>
 
 <section class="section reveal" id="publicos">
-  <h2>Para quem atendemos</h2>
+  <h2>Atendimento por perfil</h2>
   <div class="audience">
-    <div>🏢 Empresas</div><div>⚖️ Advogados</div><div>🏘️ Imobiliárias</div>
-    <div>🏗️ Obras</div><div>🏠 Proprietários</div><div>🏢 Condomínios</div>
-  </div>
-</section>
-
-<section class="section reveal comparison">
-  <h2>Por que contratar uma análise técnica?</h2>
-  <div class="compare-grid">
-    <div class="bad">
-      <h3>❌ Evite problemas</h3>
-      <p>Orçamento sem vistoria</p>
-      <p>Serviço sem responsável técnico</p>
-      <p>Decisão sem documentação</p>
-      <p>Risco jurídico e financeiro</p>
-    </div>
-    <div class="good">
-      <h3>✅ A Renderização entrega</h3>
-      <p>Responsável técnico</p>
-      <p>ART quando aplicável</p>
-      <p>Documentação organizada</p>
-      <p>Critério técnico e segurança</p>
-    </div>
+    <button onclick="quickMessage('Empresa')">🏢 Empresas</button>
+    <button onclick="quickMessage('Advogado')">⚖️ Advogados</button>
+    <button onclick="quickMessage('Imobiliária')">🏘️ Imobiliárias</button>
+    <button onclick="quickMessage('Obra')">🏗️ Obras</button>
+    <button onclick="quickMessage('Proprietário')">🏠 Proprietários</button>
+    <button onclick="quickMessage('Condomínio')">🏢 Condomínios</button>
   </div>
 </section>
 
 <section class="section reveal" id="servicos">
   <h2>Áreas de atuação</h2>
   <div class="grid">
-    <article class="card"><span>🦺</span><h3>Segurança do Trabalho</h3><p>PGR, LTCAT, PPP, eSocial SST, AET, CIPA, SIPAT e treinamentos.</p></article>
-    <article class="card"><span>🏗️</span><h3>Engenharia Civil</h3><p>Vistorias, inspeções prediais, patologias construtivas e pareceres técnicos.</p></article>
+    <article class="card"><span>🦺</span><h3>Segurança do Trabalho</h3><p>PGR, LTCAT, PPP, eSocial SST, AET, CIPA, SIPAT, DDS e treinamentos.</p></article>
+    <article class="card"><span>🏗️</span><h3>Engenharia Civil</h3><p>Vistorias, inspeções prediais, patologias construtivas, pareceres e consultoria técnica.</p></article>
     <article class="card"><span>⚖️</span><h3>Perícias</h3><p>Perícia trabalhista, engenharia civil, assistência técnica judicial e extrajudicial.</p></article>
-    <article class="card"><span>📄</span><h3>Laudos Técnicos</h3><p>Insalubridade, periculosidade, ergonomia, relatórios e estudos técnicos.</p></article>
+    <article class="card"><span>📄</span><h3>Laudos Técnicos</h3><p>Insalubridade, periculosidade, ergonomia, relatórios técnicos e documentação com critério.</p></article>
   </div>
 </section>
 
 <section class="section reveal">
-  <h2>Catálogo de serviços</h2>
+  <h2>Catálogo rápido de serviços</h2>
   <div class="service-list">
     <button onclick="selectService('PGR')">PGR</button>
     <button onclick="selectService('LTCAT')">LTCAT</button>
     <button onclick="selectService('PPP')">PPP</button>
+    <button onclick="selectService('eSocial SST')">eSocial SST</button>
+    <button onclick="selectService('Gestão do FAP')">Gestão do FAP</button>
     <button onclick="selectService('Laudo de Insalubridade')">Insalubridade</button>
     <button onclick="selectService('Laudo de Periculosidade')">Periculosidade</button>
+    <button onclick="selectService('AET / Ergonomia')">AET / Ergonomia</button>
     <button onclick="selectService('Perícia Técnica')">Perícias</button>
     <button onclick="selectService('Vistoria Imobiliária')">Vistorias</button>
-    <button onclick="selectService('Engenharia Civil')">Engenharia Civil</button>
+    <button onclick="selectService('Inspeção Predial')">Inspeção Predial</button>
+    <button onclick="selectService('Consultoria Técnica')">Consultoria Técnica</button>
   </div>
 </section>
 
-<section class="section reveal timeline" id="processo">
+<section class="section reveal comparison" id="diferenciais">
+  <h2>Diferenciais técnicos</h2>
+  <div class="compare-grid">
+    <div class="bad">
+      <h3>❌ Evite decisões frágeis</h3>
+      <p>Orçamento sem análise</p>
+      <p>Serviço sem responsável técnico</p>
+      <p>Documentação incompleta</p>
+      <p>Risco jurídico e financeiro</p>
+    </div>
+    <div class="good">
+      <h3>✅ A Renderização entrega</h3>
+      <p>Critério técnico</p>
+      <p>ART quando aplicável</p>
+      <p>Responsável técnico identificado</p>
+      <p>Orientação objetiva para decisão</p>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal timeline">
   <h2>Como funciona o atendimento</h2>
   <div class="steps">
     <div><b>1</b><span>Contato inicial</span></div>
@@ -137,16 +142,17 @@
 
 <section class="section reveal quote-box" id="orcamento">
   <h2>Solicitação rápida de orçamento</h2>
-  <p>Escolha o tipo de serviço e envie uma mensagem pronta pelo WhatsApp.</p>
+  <p>Preencha os campos e envie uma mensagem pronta pelo WhatsApp.</p>
   <div class="form">
     <select id="service">
       <option value="PGR">PGR</option><option value="LTCAT">LTCAT</option><option value="PPP">PPP</option>
+      <option value="eSocial SST">eSocial SST</option><option value="Gestão do FAP">Gestão do FAP</option>
       <option value="Laudo de Insalubridade">Laudo de Insalubridade</option>
       <option value="Laudo de Periculosidade">Laudo de Periculosidade</option>
       <option value="AET / Ergonomia">AET / Ergonomia</option>
       <option value="Perícia Técnica">Perícia Técnica</option>
       <option value="Vistoria Imobiliária">Vistoria Imobiliária</option>
-      <option value="Engenharia Civil">Engenharia Civil</option>
+      <option value="Inspeção Predial">Inspeção Predial</option>
       <option value="Consultoria Técnica">Consultoria Técnica</option>
     </select>
     <input id="clientName" type="text" placeholder="Seu nome ou empresa">
@@ -162,6 +168,7 @@
   <details><summary>Atende fora de Ponta Grossa?</summary><p>Sim, atendemos Ponta Grossa e região, conforme disponibilidade.</p></details>
   <details><summary>Faz perícia judicial?</summary><p>Sim, atuamos com perícias e assistência técnica judicial/extrajudicial.</p></details>
   <details><summary>Trabalha com Segurança do Trabalho?</summary><p>Sim, incluindo PGR, LTCAT, PPP, eSocial SST, AET, laudos e treinamentos.</p></details>
+  <details><summary>Como solicito orçamento?</summary><p>Use o formulário acima ou clique no botão de WhatsApp. A resposta será feita diretamente pelo Eng. Christian.</p></details>
 </section>
 
 <section class="section reveal downloads">
