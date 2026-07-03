@@ -129,9 +129,33 @@
 <section class="section reveal" id="trabalhos">
   <h2>Trabalhos realizados</h2>
   <div class="highlight-grid">
-    <article class="highlight" onclick="openModal('Pavimentação e infraestrutura')"><div class="photo-placeholder">🏗️</div><h3>Pavimentação e infraestrutura</h3><p>Experiência em obras, materiais, execução e controle técnico.</p></article>
-    <article class="highlight" onclick="openModal('Perícias e assistência técnica')"><div class="photo-placeholder">⚖️</div><h3>Perícias e assistência técnica</h3><p>Análise técnica para demandas judiciais, extrajudiciais e pareceres.</p></article>
-    <article class="highlight" onclick="openModal('Vistorias e inspeções')"><div class="photo-placeholder">🏢</div><h3>Vistorias e inspeções</h3><p>Avaliação de imóveis, patologias construtivas e documentação técnica.</p></article>
+    <article class="highlight" onclick="openGallery('pavimentacao')">
+      <div class="photo-placeholder">🏗️</div>
+      <h3>Pavimentação e infraestrutura</h3>
+      <p>Experiência em obras, materiais, execução e controle técnico.</p>
+      <span class="gallery-link">Ver fotos</span>
+    </article>
+
+    <article class="highlight" onclick="openGallery('pericias')">
+      <div class="photo-placeholder">⚖️</div>
+      <h3>Perícias e assistência técnica</h3>
+      <p>Análise técnica para demandas judiciais, extrajudiciais e pareceres.</p>
+      <span class="gallery-link">Ver fotos</span>
+    </article>
+
+    <article class="highlight" onclick="openGallery('vistorias')">
+      <div class="photo-placeholder">🏢</div>
+      <h3>Vistorias e inspeções</h3>
+      <p>Avaliação de imóveis, patologias construtivas e documentação técnica.</p>
+      <span class="gallery-link">Ver fotos</span>
+    </article>
+
+    <article class="highlight" onclick="openGallery('controle')">
+      <div class="photo-placeholder">🧪</div>
+      <h3>Controle tecnológico</h3>
+      <p>Ensaios, coletas, verificações em campo e apoio técnico para obras.</p>
+      <span class="gallery-link">Ver fotos</span>
+    </article>
   </div>
 </section>
 
@@ -216,11 +240,25 @@
 </main>
 
 <div class="modal" id="modal" onclick="closeModal()">
-  <div class="modal-content">
+  <div class="modal-content" onclick="event.stopPropagation()">
     <button onclick="closeModal()">×</button>
     <h2 id="modalTitle">Trabalho técnico</h2>
-    <p>Área preparada para inserir fotos reais, descrição do serviço, local, escopo e resultado entregue.</p>
+    <p id="modalText">Área preparada para inserir fotos reais, descrição do serviço, local, escopo e resultado entregue.</p>
   </div>
+</div>
+
+<div class="gallery-modal" id="galleryModal">
+  <div class="gallery-modal-content">
+    <button class="gallery-close" onclick="closeGallery()">×</button>
+    <button class="gallery-back" onclick="closeGallery()">← Voltar</button>
+    <h2 id="galleryTitle">Serviços executados</h2>
+    <p id="galleryDesc">Fotos reais de serviços executados pela Renderização.</p>
+    <div class="gallery-photos" id="galleryPhotos"></div>
+  </div>
+</div>
+
+<div class="image-viewer" id="imageViewer" onclick="closeImageViewer()">
+  <img id="viewerImage" src="" alt="Foto ampliada">
 </div>
 
 <footer>
