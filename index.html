@@ -66,13 +66,13 @@
 </section>
 
 <section class="section reveal stats">
-  <div><strong data-count="180">0</strong><span>Empresas e clientes</span></div>
+  <div><strong data-count="100">0</strong><span>Empresas e clientes</span></div>
   <div><strong data-count="350">0</strong><span>Laudos e relatórios</span></div>
-  <div><strong data-count="80">0</strong><span>Perícias técnicas</span></div>
-  <div><strong data-count="500">0</strong><span>Obras e vistorias</span></div>
+  <div><strong data-count="5">0</strong><span>Anos de experiência</span></div>
+  <div><strong data-count="150">0</strong><span>Obras e vistorias</span></div>
 </section>
 
-<section class="section reveal" style="display:none;">
+<section class="section reveal">
   <h2>Central Digital da Renderização</h2>
   <p>Um canal direto para solicitar atendimento técnico, entender os serviços e entrar em contato com a Renderização Serviços de Engenharia.</p>
 </section>
@@ -80,10 +80,12 @@
 <section class="section reveal" id="servicos">
   <h2>Áreas de atuação</h2>
   <div class="grid">
-    <article class="card"><span>🦺</span><h3>Segurança do Trabalho</h3><p>PGR, LTCAT, PPP, eSocial SST, AET, CIPA, SIPAT, DDS e treinamentos.</p></article>
-    <article class="card"><span>🏗️</span><h3>Engenharia Civil</h3><p>Vistorias, inspeções prediais, patologias construtivas, pareceres e consultoria técnica.</p></article>
-    <article class="card"><span>⚖️</span><h3>Perícias</h3><p>Perícia trabalhista, engenharia civil, assistência técnica judicial e extrajudicial.</p></article>
-    <article class="card"><span>📄</span><h3>Laudos Técnicos</h3><p>Insalubridade, periculosidade, ergonomia, relatórios técnicos e documentação com critério.</p></article>
+    <article class="card"><span>🦺</span><h3>Segurança do Trabalho</h3><p>Gestão de SST, PGR, inventário de riscos, eSocial SST, auditorias e adequação às Normas Regulamentadoras.</p></article>
+    <article class="card"><span>📄</span><h3>Laudos Técnicos</h3><p>Laudos de insalubridade, periculosidade, ergonomia, pareceres, relatórios e estudos técnicos.</p></article>
+    <article class="card"><span>⚖️</span><h3>Perícias</h3><p>Perícia trabalhista, perícias de engenharia civil, assistência técnica judicial e extrajudicial.</p></article>
+    <article class="card"><span>🎓</span><h3>Treinamentos</h3><p>Treinamentos de NRs, CIPA, SIPAT, DDS, integração e capacitações personalizadas para empresas.</p></article>
+    <article class="card"><span>🏗️</span><h3>Engenharia Civil</h3><p>Vistorias imobiliárias, inspeções prediais, recebimento de imóveis, patologias e pareceres técnicos.</p></article>
+    <article class="card"><span>🤝</span><h3>Consultoria</h3><p>Assessoria técnica, regularização documental, suporte em fiscalizações e apoio técnico para empresas.</p></article>
   </div>
 </section>
 
@@ -92,21 +94,66 @@
   <input class="search-box" id="serviceSearch" type="text" placeholder="Digite PGR, LTCAT, PPP, perícia, vistoria..." onkeyup="filterServices()">
   <div class="service-list" id="serviceList">
     <button onclick="selectService('PGR')">PGR</button>
-    <button onclick="selectService('LTCAT')">LTCAT</button>
+    <button onclick="selectService('Inventário de Riscos Ocupacionais')">Inventário de Riscos Ocupacionais</button>
+    <button onclick="selectService('Plano de Ação do PGR')">Plano de Ação do PGR</button>
+    <button onclick="selectService('PCMSO em parceria com Médico do Trabalho')">PCMSO em parceria com Médico do Trabalho</button>
     <button onclick="selectService('PPP')">PPP</button>
-    <button onclick="selectService('eSocial SST')">eSocial SST</button>
+    <button onclick="selectService('LTCAT')">LTCAT</button>
+    <button onclick="selectService('Gestão do eSocial SST')">Gestão do eSocial SST</button>
+    <button onclick="selectService('Eventos S-2210, S-2220 e S-2240')">Eventos S-2210, S-2220 e S-2240</button>
     <button onclick="selectService('Gestão do FAP')">Gestão do FAP</button>
-    <button onclick="selectService('Laudo de Insalubridade')">Insalubridade</button>
-    <button onclick="selectService('Laudo de Periculosidade')">Periculosidade</button>
-    <button onclick="selectService('AET / Ergonomia')">AET / Ergonomia</button>
-    <button onclick="selectService('Perícia Técnica')">Perícias</button>
-    <button onclick="selectService('Vistoria Imobiliária')">Vistorias</button>
-    <button onclick="selectService('Inspeção Predial')">Inspeção Predial</button>
-    <button onclick="selectService('Consultoria Técnica')">Consultoria Técnica</button>
+    <button onclick="selectService('Consultoria em Segurança do Trabalho')">Consultoria em Segurança do Trabalho</button>
+    <button onclick="selectService('Auditorias de SST')">Auditorias de SST</button>
+    <button onclick="selectService('Diagnóstico de Conformidade Legal')">Diagnóstico de Conformidade Legal</button>
+    <button onclick="selectService('Adequação às Normas Regulamentadoras')">Adequação às Normas Regulamentadoras</button>
+    <button onclick="selectService('Avaliação Preliminar de Agentes Ambientais')">Avaliação Preliminar de Agentes Ambientais</button>
+    <button onclick="selectService('Estratégia de Amostragem')">Estratégia de Amostragem</button>
+    <button onclick="selectService('Interpretação de Resultados')">Interpretação de Resultados</button>
+    <button onclick="selectService('Consultoria em Higiene Ocupacional')">Consultoria em Higiene Ocupacional</button>
+    <button onclick="selectService('Coordenação de Avaliações Quantitativas')">Coordenação de Avaliações Quantitativas</button>
+    <button onclick="selectService('Análise Ergonômica do Trabalho (AET)')">Análise Ergonômica do Trabalho (AET)</button>
+    <button onclick="selectService('Avaliações Ergonômicas')">Avaliações Ergonômicas</button>
+    <button onclick="selectService('Adequação à NR-17')">Adequação à NR-17</button>
+    <button onclick="selectService('Pareceres Técnicos em Ergonomia')">Pareceres Técnicos em Ergonomia</button>
+    <button onclick="selectService('Laudo de Insalubridade')">Laudo de Insalubridade</button>
+    <button onclick="selectService('Laudo de Periculosidade')">Laudo de Periculosidade</button>
+    <button onclick="selectService('Laudos Técnicos de Engenharia')">Laudos Técnicos de Engenharia</button>
+    <button onclick="selectService('Parecer Técnico')">Parecer Técnico</button>
+    <button onclick="selectService('Relatórios Técnicos')">Relatórios Técnicos</button>
+    <button onclick="selectService('Estudos Técnicos')">Estudos Técnicos</button>
+    <button onclick="selectService('Aposentadoria Especial')">Aposentadoria Especial</button>
+    <button onclick="selectService('Perícia Trabalhista')">Perícia Trabalhista</button>
+    <button onclick="selectService('Perícia de Engenharia Civil')">Perícia de Engenharia Civil</button>
+    <button onclick="selectService('Assistência Técnica Judicial')">Assistência Técnica Judicial</button>
+    <button onclick="selectService('Assistência Técnica Extrajudicial')">Assistência Técnica Extrajudicial</button>
+    <button onclick="selectService('Parecer Técnico Judicial')">Parecer Técnico Judicial</button>
+    <button onclick="selectService('Produção de Provas Técnicas')">Produção de Provas Técnicas</button>
+    <button onclick="selectService('Treinamentos de Normas Regulamentadoras')">Treinamentos de Normas Regulamentadoras</button>
+    <button onclick="selectService('Capacitação da CIPA')">Capacitação da CIPA</button>
+    <button onclick="selectService('Organização Técnica da SIPAT')">Organização Técnica da SIPAT</button>
+    <button onclick="selectService('DDS – Diálogo Diário de Segurança')">DDS – Diálogo Diário de Segurança</button>
+    <button onclick="selectService('Integração de Novos Colaboradores')">Integração de Novos Colaboradores</button>
+    <button onclick="selectService('Palestras Corporativas')">Palestras Corporativas</button>
+    <button onclick="selectService('Capacitações Personalizadas')">Capacitações Personalizadas</button>
+    <button onclick="selectService('Vistorias Imobiliárias')">Vistorias Imobiliárias</button>
+    <button onclick="selectService('Inspeções Prediais')">Inspeções Prediais</button>
+    <button onclick="selectService('Recebimento de Imóveis')">Recebimento de Imóveis</button>
+    <button onclick="selectService('Avaliação de Patologias Construtivas')">Avaliação de Patologias Construtivas</button>
+    <button onclick="selectService('Laudos de Patologias')">Laudos de Patologias</button>
+    <button onclick="selectService('Parecer Técnico de Engenharia')">Parecer Técnico de Engenharia</button>
+    <button onclick="selectService('Avaliação Técnica de Imóveis')">Avaliação Técnica de Imóveis</button>
+    <button onclick="selectService('Consultoria em Engenharia Civil')">Consultoria em Engenharia Civil</button>
+    <button onclick="selectService('Especialista em Pavimentação e Saneamento')">Especialista em Pavimentação e Saneamento</button>
+    <button onclick="selectService('Gestão da Documentação Legal')">Gestão da Documentação Legal</button>
+    <button onclick="selectService('Regularização Documental')">Regularização Documental</button>
+    <button onclick="selectService('Assessoria Técnica Permanente')">Assessoria Técnica Permanente</button>
+    <button onclick="selectService('Suporte em Fiscalizações')">Suporte em Fiscalizações</button>
+    <button onclick="selectService('Planejamento de Adequação Legal')">Planejamento de Adequação Legal</button>
+    <button onclick="selectService('Apoio Técnico para Empresas')">Apoio Técnico para Empresas</button>
   </div>
 </section>
 
-<section class="section reveal comparison" style="display:none;">
+<section class="section reveal comparison">
   <h2>Antes × Depois</h2>
   <div class="compare-grid">
     <div class="bad">
@@ -132,34 +179,37 @@
     <article class="highlight" onclick="openGallery('pavimentacao')">
       <div class="photo-placeholder">🏗️</div>
       <h3>Pavimentação e infraestrutura</h3>
-      <p>Experiência em obras, materiais, execução e controle técnico.</p>
+      <p>Obras, materiais, execução, acompanhamento técnico e controle de campo.</p>
       <span class="gallery-link">Ver fotos</span>
     </article>
-
+    <article class="highlight" onclick="openGallery('saneamento')">
+      <div class="photo-placeholder">🚧</div>
+      <h3>Saneamento</h3>
+      <p>Redes, drenagem, infraestrutura urbana, acompanhamento e registros técnicos.</p>
+      <span class="gallery-link">Ver fotos</span>
+    </article>
     <article class="highlight" onclick="openGallery('pericias')">
       <div class="photo-placeholder">⚖️</div>
       <h3>Perícias e assistência técnica</h3>
       <p>Análise técnica para demandas judiciais, extrajudiciais e pareceres.</p>
       <span class="gallery-link">Ver fotos</span>
     </article>
-
     <article class="highlight" onclick="openGallery('vistorias')">
       <div class="photo-placeholder">🏢</div>
       <h3>Vistorias e inspeções</h3>
       <p>Avaliação de imóveis, patologias construtivas e documentação técnica.</p>
       <span class="gallery-link">Ver fotos</span>
     </article>
-
     <article class="highlight" onclick="openGallery('controle')">
       <div class="photo-placeholder">🧪</div>
-      <h3>Controle tecnológico</h3>
+      <h3>Acompanhamento técnico e controle tecnológico</h3>
       <p>Ensaios, coletas, verificações em campo e apoio técnico para obras.</p>
       <span class="gallery-link">Ver fotos</span>
     </article>
   </div>
 </section>
 
-<section class="section reveal timeline" style="display:none;">
+<section class="section reveal timeline">
   <h2>Como funciona o atendimento</h2>
   <div class="steps">
     <div><b>1</b><span>Contato inicial</span></div>
@@ -174,31 +224,79 @@
 <section class="section reveal testimonials">
   <h2>Depoimentos</h2>
   <div class="testimonial-slider">
-    <div class="testimonial active"><p>★★★★★</p><blockquote>“Atendimento técnico e objetivo. Estrutura preparada para orientar decisões com segurança.”</blockquote></div>
-    <div class="testimonial"><p>★★★★★</p><blockquote>“Aqui ficarão depoimentos reais de clientes atendidos pela Renderização.”</blockquote></div>
-    <div class="testimonial"><p>★★★★★</p><blockquote>“Sua empresa pode ser a próxima a contar com suporte técnico especializado.”</blockquote></div>
+    <div class="testimonial active"><p>★★★★★</p><blockquote>“Excelente atendimento técnico. Serviço entregue com clareza, organização e documentação bem elaborada.”</blockquote></div>
+    <div class="testimonial"><p>★★★★★</p><blockquote>“Profissional muito competente. Explicou todas as etapas do processo de forma objetiva.”</blockquote></div>
+    <div class="testimonial"><p>★★★★★</p><blockquote>“Atendimento rápido e suporte técnico de qualidade durante toda a demanda.”</blockquote></div>
+    <div class="testimonial"><p>★★★★★</p><blockquote>“Laudo técnico detalhado, bem estruturado e com informações importantes para tomada de decisão.”</blockquote></div>
+    <div class="testimonial"><p>★★★★★</p><blockquote>“Empresa organizada, comprometida com segurança, qualidade e responsabilidade técnica.”</blockquote></div>
   </div>
 </section>
 
 <section class="section reveal quote-box" id="orcamento">
   <h2>Solicitação rápida de orçamento</h2>
-  <p>Preencha os campos e envie uma mensagem pronta pelo WhatsApp.</p>
+  <p>Escolha o serviço, informe seu nome ou empresa e envie uma mensagem pronta pelo WhatsApp.</p>
   <div class="form">
     <select id="service">
-      <option value="PGR">PGR</option><option value="LTCAT">LTCAT</option><option value="PPP">PPP</option>
-      <option value="eSocial SST">eSocial SST</option><option value="Gestão do FAP">Gestão do FAP</option>
+      <option value="PGR">PGR</option>
+      <option value="Inventário de Riscos Ocupacionais">Inventário de Riscos Ocupacionais</option>
+      <option value="Plano de Ação do PGR">Plano de Ação do PGR</option>
+      <option value="PCMSO em parceria com Médico do Trabalho">PCMSO em parceria com Médico do Trabalho</option>
+      <option value="PPP">PPP</option>
+      <option value="LTCAT">LTCAT</option>
+      <option value="Gestão do eSocial SST">Gestão do eSocial SST</option>
+      <option value="Eventos S-2210, S-2220 e S-2240">Eventos S-2210, S-2220 e S-2240</option>
+      <option value="Gestão do FAP">Gestão do FAP</option>
+      <option value="Consultoria em Segurança do Trabalho">Consultoria em Segurança do Trabalho</option>
+      <option value="Auditorias de SST">Auditorias de SST</option>
+      <option value="Diagnóstico de Conformidade Legal">Diagnóstico de Conformidade Legal</option>
+      <option value="Adequação às Normas Regulamentadoras">Adequação às Normas Regulamentadoras</option>
+      <option value="Avaliação Preliminar de Agentes Ambientais">Avaliação Preliminar de Agentes Ambientais</option>
+      <option value="Estratégia de Amostragem">Estratégia de Amostragem</option>
+      <option value="Interpretação de Resultados">Interpretação de Resultados</option>
+      <option value="Consultoria em Higiene Ocupacional">Consultoria em Higiene Ocupacional</option>
+      <option value="Coordenação de Avaliações Quantitativas">Coordenação de Avaliações Quantitativas</option>
+      <option value="Análise Ergonômica do Trabalho (AET)">Análise Ergonômica do Trabalho (AET)</option>
+      <option value="Avaliações Ergonômicas">Avaliações Ergonômicas</option>
+      <option value="Adequação à NR-17">Adequação à NR-17</option>
+      <option value="Pareceres Técnicos em Ergonomia">Pareceres Técnicos em Ergonomia</option>
       <option value="Laudo de Insalubridade">Laudo de Insalubridade</option>
       <option value="Laudo de Periculosidade">Laudo de Periculosidade</option>
-      <option value="AET / Ergonomia">AET / Ergonomia</option>
-      <option value="Perícia Técnica">Perícia Técnica</option>
-      <option value="Vistoria Imobiliária">Vistoria Imobiliária</option>
-      <option value="Inspeção Predial">Inspeção Predial</option>
-      <option value="Consultoria Técnica">Consultoria Técnica</option>
+      <option value="Laudos Técnicos de Engenharia">Laudos Técnicos de Engenharia</option>
+      <option value="Parecer Técnico">Parecer Técnico</option>
+      <option value="Relatórios Técnicos">Relatórios Técnicos</option>
+      <option value="Estudos Técnicos">Estudos Técnicos</option>
+      <option value="Aposentadoria Especial">Aposentadoria Especial</option>
+      <option value="Perícia Trabalhista">Perícia Trabalhista</option>
+      <option value="Perícia de Engenharia Civil">Perícia de Engenharia Civil</option>
+      <option value="Assistência Técnica Judicial">Assistência Técnica Judicial</option>
+      <option value="Assistência Técnica Extrajudicial">Assistência Técnica Extrajudicial</option>
+      <option value="Parecer Técnico Judicial">Parecer Técnico Judicial</option>
+      <option value="Produção de Provas Técnicas">Produção de Provas Técnicas</option>
+      <option value="Treinamentos de Normas Regulamentadoras">Treinamentos de Normas Regulamentadoras</option>
+      <option value="Capacitação da CIPA">Capacitação da CIPA</option>
+      <option value="Organização Técnica da SIPAT">Organização Técnica da SIPAT</option>
+      <option value="DDS – Diálogo Diário de Segurança">DDS – Diálogo Diário de Segurança</option>
+      <option value="Integração de Novos Colaboradores">Integração de Novos Colaboradores</option>
+      <option value="Palestras Corporativas">Palestras Corporativas</option>
+      <option value="Capacitações Personalizadas">Capacitações Personalizadas</option>
+      <option value="Vistorias Imobiliárias">Vistorias Imobiliárias</option>
+      <option value="Inspeções Prediais">Inspeções Prediais</option>
+      <option value="Recebimento de Imóveis">Recebimento de Imóveis</option>
+      <option value="Avaliação de Patologias Construtivas">Avaliação de Patologias Construtivas</option>
+      <option value="Laudos de Patologias">Laudos de Patologias</option>
+      <option value="Parecer Técnico de Engenharia">Parecer Técnico de Engenharia</option>
+      <option value="Avaliação Técnica de Imóveis">Avaliação Técnica de Imóveis</option>
+      <option value="Consultoria em Engenharia Civil">Consultoria em Engenharia Civil</option>
+      <option value="Especialista em Pavimentação e Saneamento">Especialista em Pavimentação e Saneamento</option>
+      <option value="Gestão da Documentação Legal">Gestão da Documentação Legal</option>
+      <option value="Regularização Documental">Regularização Documental</option>
+      <option value="Assessoria Técnica Permanente">Assessoria Técnica Permanente</option>
+      <option value="Suporte em Fiscalizações">Suporte em Fiscalizações</option>
+      <option value="Planejamento de Adequação Legal">Planejamento de Adequação Legal</option>
+      <option value="Apoio Técnico para Empresas">Apoio Técnico para Empresas</option>
     </select>
     <input id="clientName" type="text" placeholder="Seu nome ou empresa">
-    <input id="clientPhone" type="text" placeholder="Seu telefone">
     <textarea id="clientNote" placeholder="Descreva rapidamente sua necessidade"></textarea>
-    <label class="file-label">📎 Campo para anexos será ativado em versão futura</label>
     <button onclick="sendBudget()">Enviar para WhatsApp</button>
   </div>
 </section>
@@ -240,10 +338,10 @@
 </main>
 
 <div class="modal" id="modal" onclick="closeModal()">
-  <div class="modal-content" onclick="event.stopPropagation()">
+  <div class="modal-content">
     <button onclick="closeModal()">×</button>
     <h2 id="modalTitle">Trabalho técnico</h2>
-    <p id="modalText">Área preparada para inserir fotos reais, descrição do serviço, local, escopo e resultado entregue.</p>
+    <p>Área preparada para inserir fotos reais, descrição do serviço, local, escopo e resultado entregue.</p>
   </div>
 </div>
 
