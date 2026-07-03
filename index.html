@@ -11,13 +11,20 @@
 </head>
 <body>
 
+<div class="loader" id="loader">
+  <div class="loader-card">
+    <div class="loader-mark">R</div>
+    <p>Carregando portal técnico...</p>
+  </div>
+</div>
+
 <a class="floating-whatsapp" href="https://wa.me/5542999060610?text=Ol%C3%A1%2C%20Engenheiro%20Christian%21%20Vim%20pelo%20portal%20digital%20da%20Renderiza%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.">💬</a>
 <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <nav class="nav">
   <a href="#inicio">Início</a>
   <a href="#servicos">Serviços</a>
-  <a href="#publicos">Públicos</a>
+  <a href="#obras">Destaques</a>
   <a href="#diferenciais">Diferenciais</a>
   <a href="#orcamento">Orçamento</a>
   <a href="#contato">Contato</a>
@@ -68,18 +75,6 @@
   <p>Um canal direto para solicitar atendimento técnico, entender os serviços e entrar em contato com a Renderização Serviços de Engenharia.</p>
 </section>
 
-<section class="section reveal" id="publicos">
-  <h2>Atendimento por perfil</h2>
-  <div class="audience">
-    <button onclick="quickMessage('Empresa')">🏢 Empresas</button>
-    <button onclick="quickMessage('Advogado')">⚖️ Advogados</button>
-    <button onclick="quickMessage('Imobiliária')">🏘️ Imobiliárias</button>
-    <button onclick="quickMessage('Obra')">🏗️ Obras</button>
-    <button onclick="quickMessage('Proprietário')">🏠 Proprietários</button>
-    <button onclick="quickMessage('Condomínio')">🏢 Condomínios</button>
-  </div>
-</section>
-
 <section class="section reveal" id="servicos">
   <h2>Áreas de atuação</h2>
   <div class="grid">
@@ -108,8 +103,31 @@
   </div>
 </section>
 
-<section class="section reveal comparison" id="diferenciais">
-  <h2>Diferenciais técnicos</h2>
+<section class="section reveal" id="obras">
+  <h2>Obras e atendimentos em destaque</h2>
+  <div class="highlight-grid">
+    <article class="highlight"><div class="photo-placeholder">🏗️</div><h3>Pavimentação e infraestrutura</h3><p>Experiência em obras, materiais, execução e controle técnico.</p></article>
+    <article class="highlight"><div class="photo-placeholder">⚖️</div><h3>Perícias e assistência técnica</h3><p>Análise técnica para demandas judiciais, extrajudiciais e pareceres.</p></article>
+    <article class="highlight"><div class="photo-placeholder">🏢</div><h3>Vistorias e inspeções</h3><p>Avaliação de imóveis, patologias construtivas e documentação técnica.</p></article>
+  </div>
+</section>
+
+<section class="section reveal" id="diferenciais">
+  <h2>Por que escolher a Renderização?</h2>
+  <div class="benefits">
+    <div>✔ CREA ativo</div>
+    <div>✔ ART quando aplicável</div>
+    <div>✔ Atendimento técnico</div>
+    <div>✔ Laudos fundamentados</div>
+    <div>✔ Segurança jurídica</div>
+    <div>✔ Engenharia baseada em dados</div>
+    <div>✔ Responsabilidade técnica</div>
+    <div>✔ Ponta Grossa e região</div>
+  </div>
+</section>
+
+<section class="section reveal comparison">
+  <h2>Decisão técnica reduz risco</h2>
   <div class="compare-grid">
     <div class="bad">
       <h3>❌ Evite decisões frágeis</h3>
@@ -140,6 +158,15 @@
   </div>
 </section>
 
+<section class="section reveal testimonials">
+  <h2>Avaliações</h2>
+  <div class="testimonial-slider">
+    <div class="testimonial active"><p>★★★★★</p><blockquote>“Atendimento técnico e objetivo. Estrutura preparada para orientar decisões com segurança.”</blockquote></div>
+    <div class="testimonial"><p>★★★★★</p><blockquote>“Aqui ficarão depoimentos reais de clientes atendidos pela Renderização.”</blockquote></div>
+    <div class="testimonial"><p>★★★★★</p><blockquote>“Sua empresa pode ser a próxima a contar com suporte técnico especializado.”</blockquote></div>
+  </div>
+</section>
+
 <section class="section reveal quote-box" id="orcamento">
   <h2>Solicitação rápida de orçamento</h2>
   <p>Preencha os campos e envie uma mensagem pronta pelo WhatsApp.</p>
@@ -164,11 +191,17 @@
 
 <section class="section reveal faq">
   <h2>Perguntas frequentes</h2>
+  <details><summary>Quanto custa um LTCAT?</summary><p>Cada empresa possui características diferentes. O orçamento é personalizado conforme atividade, riscos, local e escopo.</p></details>
   <details><summary>Emite ART?</summary><p>Sim, quando aplicável ao serviço técnico contratado.</p></details>
-  <details><summary>Atende fora de Ponta Grossa?</summary><p>Sim, atendemos Ponta Grossa e região, conforme disponibilidade.</p></details>
+  <details><summary>Atendem pequenas empresas?</summary><p>Sim. Atendemos desde pequenas empresas até demandas maiores, conforme escopo técnico.</p></details>
   <details><summary>Faz perícia judicial?</summary><p>Sim, atuamos com perícias e assistência técnica judicial/extrajudicial.</p></details>
-  <details><summary>Trabalha com Segurança do Trabalho?</summary><p>Sim, incluindo PGR, LTCAT, PPP, eSocial SST, AET, laudos e treinamentos.</p></details>
-  <details><summary>Como solicito orçamento?</summary><p>Use o formulário acima ou clique no botão de WhatsApp. A resposta será feita diretamente pelo Eng. Christian.</p></details>
+  <details><summary>Atende somente Ponta Grossa?</summary><p>Não. Atendemos Ponta Grossa e região, conforme disponibilidade.</p></details>
+</section>
+
+<section class="section reveal map-card">
+  <h2>Atendimento regional</h2>
+  <p>Base em Ponta Grossa – PR, com atendimento técnico na região.</p>
+  <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Renderização+Serviços+de+Engenharia+Ponta+Grossa+PR">📍 Abrir localização no Google Maps</a>
 </section>
 
 <section class="section reveal downloads">
