@@ -9,14 +9,16 @@
 <link rel="stylesheet" href="css/style.css">
 <script defer src="js/script.js"></script>
 </head>
-
 <body>
 
 <a class="floating-whatsapp" href="https://wa.me/5542999060610?text=Ol%C3%A1%2C%20Engenheiro%20Christian%21%20Vim%20pelo%20portal%20digital%20da%20Renderiza%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.">💬</a>
+<button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <nav class="nav">
   <a href="#inicio">Início</a>
   <a href="#servicos">Serviços</a>
+  <a href="#publicos">Públicos</a>
+  <a href="#processo">Processo</a>
   <a href="#orcamento">Orçamento</a>
   <a href="#contato">Contato</a>
 </nav>
@@ -28,9 +30,11 @@
     <img src="img/logo-renderizacao.png.png" alt="Renderização Serviços de Engenharia" class="logo">
   </div>
 
+  <h1>Engenharia Civil • Segurança do Trabalho • Perícias Técnicas</h1>
+  <p class="subtitle">Soluções técnicas para empresas, advogados, condomínios, imobiliárias e proprietários.</p>
+
   <p class="name">Eng. Christian Guerem</p>
   <p class="crea">CREA-PR 200142/D</p>
-  <p class="slogan">Engenharia que <strong>transforma</strong> e protege</p>
 
   <div class="trust-row">
     <div><strong>CREA</strong><span>Ativo</span></div>
@@ -38,7 +42,7 @@
     <div><strong>PG/PR</strong><span>e região</span></div>
   </div>
 
-  <a class="primary-btn" href="https://wa.me/5542999060610?text=Ol%C3%A1%2C%20Engenheiro%20Christian%21%20Vim%20pelo%20seu%20cart%C3%A3o%20de%20visita%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20e%20conhecer%20melhor%20os%20servi%C3%A7os%20da%20Renderiza%C3%A7%C3%A3o%20Servi%C3%A7os%20de%20Engenharia.">
+  <a class="primary-btn" href="https://wa.me/5542999060610?text=Ol%C3%A1%2C%20Engenheiro%20Christian%21%20Vim%20pelo%20portal%20digital%20da%20Renderiza%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.">
     Solicitar orçamento pelo WhatsApp
   </a>
 </header>
@@ -54,16 +58,43 @@
   <button onclick="sharePortal()">🔗 Compartilhar</button>
 </section>
 
+<section class="section reveal stats">
+  <div><strong data-count="500">0</strong><span>Serviços realizados</span></div>
+  <div><strong data-count="100">0</strong><span>Empresas atendidas</span></div>
+  <div><strong data-count="50">0</strong><span>Perícias e vistorias</span></div>
+  <div><strong data-count="100">0</strong><span>% Responsabilidade técnica</span></div>
+</section>
+
 <section class="section reveal">
   <h2>Central Digital da Renderização</h2>
   <p>Atendimento técnico em Engenharia Civil, Segurança do Trabalho, Laudos, Perícias e Vistorias em Ponta Grossa e região.</p>
 </section>
 
-<section class="section reveal">
+<section class="section reveal" id="publicos">
   <h2>Para quem atendemos</h2>
   <div class="audience">
     <div>🏢 Empresas</div><div>⚖️ Advogados</div><div>🏘️ Imobiliárias</div>
     <div>🏗️ Obras</div><div>🏠 Proprietários</div><div>🏢 Condomínios</div>
+  </div>
+</section>
+
+<section class="section reveal comparison">
+  <h2>Por que contratar uma análise técnica?</h2>
+  <div class="compare-grid">
+    <div class="bad">
+      <h3>❌ Evite problemas</h3>
+      <p>Orçamento sem vistoria</p>
+      <p>Serviço sem responsável técnico</p>
+      <p>Decisão sem documentação</p>
+      <p>Risco jurídico e financeiro</p>
+    </div>
+    <div class="good">
+      <h3>✅ A Renderização entrega</h3>
+      <p>Responsável técnico</p>
+      <p>ART quando aplicável</p>
+      <p>Documentação organizada</p>
+      <p>Critério técnico e segurança</p>
+    </div>
   </div>
 </section>
 
@@ -88,7 +119,31 @@
   </div>
 </section>
 
-<section class="section quote-box reveal" id="orcamento">
+<section class="section reveal timeline" id="processo">
+  <h2>Como funciona o atendimento</h2>
+  <div class="steps">
+    <div><b>1</b><span>Contato inicial</span></div>
+    <div><b>2</b><span>Entendimento da demanda</span></div>
+    <div><b>3</b><span>Orçamento</span></div>
+    <div><b>4</b><span>Visita técnica</span></div>
+    <div><b>5</b><span>Entrega técnica</span></div>
+    <div><b>6</b><span>Suporte</span></div>
+  </div>
+</section>
+
+<section class="section reveal testimonials">
+  <h2>Confiança e atendimento técnico</h2>
+  <div class="testimonial">
+    <p>⭐⭐⭐⭐⭐</p>
+    <blockquote>“Atendimento técnico, organizado e com foco em segurança.”</blockquote>
+  </div>
+  <div class="testimonial">
+    <p>⭐⭐⭐⭐⭐</p>
+    <blockquote>“Documentação clara e orientação objetiva para tomada de decisão.”</blockquote>
+  </div>
+</section>
+
+<section class="section reveal quote-box" id="orcamento">
   <h2>Solicitação rápida de orçamento</h2>
   <p>Escolha o tipo de serviço e envie uma mensagem pronta pelo WhatsApp.</p>
   <div class="form">
@@ -107,6 +162,23 @@
   </div>
 </section>
 
+<section class="section reveal faq">
+  <h2>Perguntas frequentes</h2>
+  <details><summary>Emite ART?</summary><p>Sim, quando aplicável ao serviço técnico contratado.</p></details>
+  <details><summary>Atende fora de Ponta Grossa?</summary><p>Sim, atendemos Ponta Grossa e região, conforme disponibilidade.</p></details>
+  <details><summary>Faz perícia judicial?</summary><p>Sim, atuamos com perícias e assistência técnica judicial/extrajudicial.</p></details>
+  <details><summary>Trabalha com Segurança do Trabalho?</summary><p>Sim, incluindo PGR, LTCAT, PPP, eSocial SST, AET, laudos e treinamentos.</p></details>
+</section>
+
+<section class="section reveal downloads">
+  <h2>Materiais e documentos</h2>
+  <div class="download-grid">
+    <a href="#orcamento">📄 Solicitar portfólio</a>
+    <a href="#orcamento">📄 Solicitar proposta</a>
+    <a href="#contato">📇 Salvar contato</a>
+  </div>
+</section>
+
 <section class="section reveal" id="contato">
   <h2>Contato</h2>
   <div class="contact-list">
@@ -119,6 +191,7 @@
 
 <footer>
   <p><strong>Renderização Serviços de Engenharia</strong></p>
+  <p>Eng. Christian Guerem • CREA-PR 200142/D</p>
   <p>Atendimento técnico com responsabilidade, ética e ART quando aplicável.</p>
 </footer>
 
