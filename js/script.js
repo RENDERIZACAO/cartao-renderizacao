@@ -3,10 +3,7 @@ function sendBudget(){const service=document.getElementById("service").value;con
 function selectService(service){document.getElementById("service").value=service;document.getElementById("orcamento").scrollIntoView({behavior:"smooth"});}
 function filterServices(){const input=document.getElementById("serviceSearch").value.toLowerCase();document.querySelectorAll("#serviceList button").forEach(btn=>{btn.style.display=btn.textContent.toLowerCase().includes(input)?"block":"none"})}
 function sharePortal(){const data={title:"Renderização Serviços de Engenharia",text:"Portal digital da Renderização Serviços de Engenharia",url:window.location.href};if(navigator.share){navigator.share(data)}else{navigator.clipboard.writeText(window.location.href);alert("Link copiado!")}}
-function openModal(title,text){document.getElementById("modalTitle").textContent=title;document.getElementById("modalText").textContent=text;document.getElementById("modal").classList.add("show")}
+function openModal(title){document.getElementById("modalTitle").textContent=title;document.getElementById("modal").classList.add("show")}
 function closeModal(){document.getElementById("modal").classList.remove("show")}
-function openImage(src){document.getElementById("modalImage").src=src;document.getElementById("imageModal").classList.add("show")}
-function closeImage(){document.getElementById("imageModal").classList.remove("show")}
-function filterGallery(cat){document.querySelectorAll(".gallery-grid img").forEach(img=>{img.style.display=(cat==="all"||img.dataset.cat===cat)?"block":"none"})}
 const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible")}})},{threshold:.12});
 document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));document.querySelectorAll("[data-count]").forEach(el=>{let target=parseInt(el.dataset.count);let current=0;let step=Math.max(1,Math.floor(target/45));let timer=setInterval(()=>{current+=step;if(current>=target){current=target;clearInterval(timer)}el.textContent=current+"+"},30)});let index=0;setInterval(()=>{const items=document.querySelectorAll(".testimonial");if(items.length){items[index].classList.remove("active");index=(index+1)%items.length;items[index].classList.add("active")}},3500)});
